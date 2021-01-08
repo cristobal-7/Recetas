@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'url'
     ];
 
     /**
@@ -36,4 +36,12 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * Relaciòn 1:n de Usuario a recetas, esta relación es accedida desde el controlador en el metodo index
+     */
+    public function recetas(){
+
+        return $this->hasMany(Receta::class);
+    }
 }
