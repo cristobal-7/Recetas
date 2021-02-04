@@ -8,6 +8,7 @@
 </p>
 
 ## Desarrollo realizado con Laravel 7
+## Sitio Web de Recetas, CRUD, search, Menú, login, registrar, Perfiles, Permisos, policy, etc.
 
 ## About Laravel
 
