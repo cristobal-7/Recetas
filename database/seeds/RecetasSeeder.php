@@ -55,5 +55,49 @@ class RecetasSeeder extends Seeder
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
+
+        DB::table('recetas')->insert([
+            'titulo' => 'Pure con huevo',
+            'ingredientes' => 'cualquier corte de res, pasta de ajo, agual, sal, etc...',
+            'preparacion' => 'calentar el agua a 180° Celcius por 7 minutos',
+            'imagen' => 'res.jpg',
+            'user_id' => '1',
+            'categoria_id' => '2',
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s'),
+        ]);
+
+        DB::table('recetas')->insert([
+            'titulo' => 'Zapallo Italiano Relleno',
+            'ingredientes' => 'cualquier corte de res, pasta de ajo, agual, sal, etc...',
+            'preparacion' => 'calentar el agua a 180° Celcius por 7 minutos',
+            'imagen' => 'res.jpg',
+            'user_id' => '1',
+            'categoria_id' => '3',
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s'),
+        ]);
+
+        DB::table('recetas')->insert([
+            'titulo' => 'Ensalada de Porotos Negros',
+            'ingredientes' => 'cualquier corte de res, pasta de ajo, agual, sal, etc...',
+            'preparacion' => 'calentar el agua a 180° Celcius por 7 minutos',
+            'imagen' => 'res.jpg',
+            'user_id' => '2',
+            'categoria_id' => '4',
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s'),
+        ]);
+
+        DB::table('recetas')->insert([
+            'titulo' => 'Arroz con papas fritas',
+            'ingredientes' => 'cualquier corte de res, pasta de ajo, agual, sal, etc...',
+            'preparacion' => 'calentar el agua a 180° Celcius por 7 minutos',
+            'imagen' => 'arrox.jpg',
+            'user_id' => '1',
+            'categoria_id' => '2',
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s'),
+        ]);
     }
 }

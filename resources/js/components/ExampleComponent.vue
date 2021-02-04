@@ -3,10 +3,10 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Example Component</div>
+                    <div class="card-header">Ejemplo Component</div>
 
                     <div class="card-body">
-                        I'm an example component.
+                        yo soy un ejemplo de component.
                     </div>
                 </div>
             </div>

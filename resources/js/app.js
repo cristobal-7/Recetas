@@ -4,6 +4,8 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
+ 
+
 require('./bootstrap');
 
 window.Vue = require('vue');
@@ -13,13 +15,20 @@ window.Vue = require('vue');
  * Vue components. It will recursively scan this directory for the Vue
  * components and automatically register them with their "basename".
  *
- * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
+ *   
  */
 
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('example', require('./components/ExampleComponent.vue').default);
+
+
+//Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.config.ignoredElements = ['trix-editor', 'trix-toolbar']; //Ignora la etiqueta <trix-editor>
+Vue.component('fecha-receta', require('./components/FechaReceta.vue').default);
+Vue.component('eliminar-receta', require('./components/EliminarReceta.vue').default);
+Vue.component('like-button', require('./components/LikeButton.vue').default);
+
 
 //Vue.component('fecha-receta', require('./componets/FechaReceta.vue').default);
 /**
@@ -31,3 +40,4 @@ Vue.component('example', require('./components/ExampleComponent.vue').default);
 const app = new Vue({
     el: '#app',
 });
+

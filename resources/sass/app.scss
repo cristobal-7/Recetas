@@ -1,8 +1,15 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Fredoka+One&display=swap');
 
 // Variables
 @import 'variables';
+// @import 'recetas';
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+ @import '~bootstrap/scss/bootstrap';
+// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+//Archivo de recetas
+@import 'recetas';
+
+@import 'like';
